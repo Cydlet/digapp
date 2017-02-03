@@ -39,6 +39,16 @@ $navbar-default-bg: #1190c6;
     background-color: black;
 }
 
+footer ul{
+    float:right;
+    list-style:none;
+}
+
+footer ul li{
+    float:left;
+    margin-left: 15px;
+}
+
 footer{
     margin-top: 45px;
     padding-top: 5px;
@@ -54,12 +64,3 @@ footer small{
     float:left;
 }
 
-footer ul{
-    float:right;
-    list-style:none;
-}
-
-footer ul li{
-    float:left;
-    margin-left: 15px;
-}
