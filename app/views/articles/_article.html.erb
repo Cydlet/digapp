@@ -13,14 +13,14 @@
                         <small> | Updated: <%= time_ago_in_words(art.updated_at) %> ago</small>
                     </div>
                 </div>
-                
+                <% if logged_in? && (current_user == art.user || current_user.admin?) %>
                 <div class="article-actions">
                 <%= link_to "Edit", edit_article_path(art), class:"btn btn-xs btn-primary"%>
                 <%= link_to "Delete", article_path(art),    method: :delete,
                                                             data: { confirm: "Delete post?"},
                                                             class:"btn btn-xs btn-danger" %>
                 </div>
-                
+                <% end %>
             </div>
         </div>
     </div>
